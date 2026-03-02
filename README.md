@@ -12,7 +12,7 @@ The bot pulls from three data sources and combines them into a single blended te
 
 **Private Weather Stations (PWS)** — seven personal weather stations around NYC are queried via The Weather Company API. Each station's historical bias against NWS reference temps is calculated and used to produce a bias-corrected temperature estimate. The 1-hour delta across all stations is also computed to determine the current temperature trend.
 
-**HRRR Forecast Files** are produced by a separate script in the [HRRR Bilinear Implementation](https://github.com/Fale-Jnoa/hrrr-bilinear-implementation) repo. That script downloads HRRR model data, performs bilinear interpolation to Central Park coordinates, and writes forecast files to a shared `Forecasts/` directory that this bot reads from. The 2-hour delta from those forecasts is used to determine the model's predicted trend.
+**HRRR Forecast Files** are produced by a separate script in the [HRRR Bilinear Implementation](https://github.com/Fale-Jnoa/hrrr-bilinear-implementation) repo. That script downloads HRRR model data, performs bilinear interpolation to Central Park coordinates, and writes forecast files to a shared `Forecasts/` directory that this bot reads from. The 2-hour delta from those forecasts is used to determine the model's predicted trend. Examples of the output can be seen in the Forecasts folder above.
 
 ### Trend Agreement Logic
 
