@@ -21,7 +21,7 @@ ET = ZoneInfo("America/New_York")
 
 KALSHI_SERIES_TICKER = os.getenv("KALSHI_SERIES_TICKER", "HIGHNY")
 FORECAST_DIR         = Path(os.getenv("KALSHI_FORECAST_DIR", r"C:\KalshiBot\Forecasts"))
-MAX_CONTRACTS        = int(os.getenv("MAX_CONTRACTS", 5))
+MAX_CONTRACTS        = int(os.getenv("MAX_CONTRACTS", 150))
 MAX_SPEND_USD        = float(os.getenv("MAX_SPEND_USD", 25.0))
 MIN_CONFIDENCE       = float(os.getenv("MIN_CONFIDENCE", 0.60))
 MIN_EDGE_CENTS       = int(os.getenv("MIN_EDGE_CENTS", 5))
