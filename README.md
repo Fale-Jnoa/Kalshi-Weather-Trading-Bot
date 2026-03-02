@@ -86,7 +86,7 @@ python trading/trading_algo.py
 
 | Parameter | Default | Description |
 |---|---|---|
-| `MAX_CONTRACTS` | 5 | Max contracts per trade |
+| `MAX_CONTRACTS` | 150 | Max contracts per trade |
 | `MAX_SPEND_USD` | $25 | Max spend per trade |
 | `MIN_CONFIDENCE` | 0.60 | Minimum confidence to place a trade |
 | `MIN_EDGE_CENTS` | 5¢ | Minimum edge required vs market price |
